@@ -1,1 +1,15 @@
+# Node.js dependencies
 node_modules/
+
+# Fichiers générés
+dist/
+
+# Configuration sensible
+.env
+*.env
+
+# Logs et autres fichiers système
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
