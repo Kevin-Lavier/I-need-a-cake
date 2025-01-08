@@ -22,7 +22,6 @@
             </div>
         </section>
 
-        <!-- Section des pâtisseries populaires -->
         <section class="py-12 bg-gray-100">
     <div class="container mx-auto text-center">
         <!-- Titre de la section -->
@@ -30,19 +29,19 @@
         <!-- Grille des pâtisseries -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
             <!-- Carte 1 -->
-            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 hover:-rotate-2 transition-transform duration-300">
-    <a href="./patisseries/details.php?id=1">
-        <img src="./assets/images/patisserie1.jpg" alt="Macarons au chocolat" class="w-full h-40 object-cover">
-    </a>
-    <div class="p-4">
-        <h3 class="text-lg font-semibold">
-            <a href="./patisseries/details.php?id=1" class="hover:underline">Macarons au chocolat</a>
-        </h3>
-        <p class="text-gray-600 mt-2">Un délice gourmand pour tous les amateurs de chocolat.</p>
-    </div>
-</div>
+            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <a href="./patisseries/details.php?id=1">
+                    <img src="./assets/images/patisserie1.jpg" alt="Macarons au chocolat" class="w-full h-40 object-cover">
+                </a>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">
+                        <a href="./patisseries/details.php?id=1" class="hover:underline">Macarons au chocolat</a>
+                    </h3>
+                    <p class="text-gray-600 mt-2">Un délice gourmand pour tous les amateurs de chocolat.</p>
+                </div>
+            </div>
             <!-- Carte 2 -->
-            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 hover:rotate-2 transition-transform duration-300">
+            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <a href="./patisseries/details.php?id=2">
                     <img src="./assets/images/patisserie2.jpg" alt="Éclair à la vanille" class="w-full h-40 object-cover">
                 </a>
@@ -54,7 +53,7 @@
                 </div>
             </div>
             <!-- Carte 3 -->
-            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 hover:-rotate-2 transition-transform duration-300">
+            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <a href="./patisseries/details.php?id=3">
                     <img src="./assets/images/patisserie3.jpg" alt="Tarte aux framboises" class="w-full h-40 object-cover">
                 </a>
@@ -66,7 +65,7 @@
                 </div>
             </div>
             <!-- Carte 4 -->
-            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 hover:rotate-2 transition-transform duration-300">
+            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <a href="./patisseries/details.php?id=4">
                     <img src="./assets/images/patisserie4.jpg" alt="Croissant au beurre" class="w-full h-40 object-cover">
                 </a>
@@ -78,7 +77,7 @@
                 </div>
             </div>
             <!-- Carte 5 -->
-            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 hover:-rotate-2 transition-transform duration-300">
+            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <a href="./patisseries/details.php?id=5">
                     <img src="./assets/images/patisserie5.jpg" alt="Pain au chocolat" class="w-full h-40 object-cover">
                 </a>
@@ -90,7 +89,7 @@
                 </div>
             </div>
             <!-- Carte 6 -->
-            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 hover:rotate-2 transition-transform duration-300">
+            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <a href="./patisseries/details.php?id=6">
                     <img src="./assets/images/patisserie6.jpg" alt="Cheesecake au citron" class="w-full h-40 object-cover">
                 </a>
@@ -102,7 +101,7 @@
                 </div>
             </div>
             <!-- Carte 7 -->
-            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 hover:-rotate-2 transition-transform duration-300">
+            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <a href="./patisseries/details.php?id=7">
                     <img src="./assets/images/patisserie7.jpg" alt="Gâteau Opéra" class="w-full h-40 object-cover">
                 </a>
@@ -114,7 +113,7 @@
                 </div>
             </div>
             <!-- Carte 8 -->
-            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 hover:rotate-2 transition-transform duration-300">
+            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <a href="./patisseries/details.php?id=8">
                     <img src="./assets/images/patisserie8.jpg" alt="Tarte Tatin" class="w-full h-40 object-cover">
                 </a>
@@ -126,7 +125,7 @@
                 </div>
             </div>
             <!-- Carte 9 -->
-            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 hover:-rotate-2 transition-transform duration-300">
+            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <a href="./patisseries/details.php?id=9">
                     <img src="./assets/images/patisserie9.jpg" alt="Mille-feuille" class="w-full h-40 object-cover">
                 </a>
@@ -140,6 +139,7 @@
         </div>
     </div>
 </section>
+
 
     </main>
 
