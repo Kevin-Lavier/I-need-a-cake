@@ -29,41 +29,29 @@
         <!-- Grille des pâtisseries -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
             <!-- Carte 1 -->
-            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
-                <a href="./patisseries/details.php?id=1">
-                    <img src="./assets/images/patisserie1.jpg" alt="Macarons au chocolat" class="w-full h-40 object-cover">
-                </a>
+            <a href="./patisseries/details.php?id=1" class="block bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <img src="./assets/images/patisserie1.jpg" alt="Macarons au chocolat" class="w-full h-40 object-cover">
                 <div class="p-4">
-                    <h3 class="text-lg font-semibold">
-                        <a href="./patisseries/details.php?id=1" class="hover:underline">Macarons au chocolat</a>
-                    </h3>
+                    <h3 class="text-lg font-semibold">Macarons au chocolat</h3>
                     <p class="text-gray-600 mt-2">Un délice gourmand pour tous les amateurs de chocolat.</p>
                 </div>
-            </div>
+            </a>
             <!-- Carte 2 -->
-            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
-                <a href="./patisseries/details.php?id=2">
-                    <img src="./assets/images/patisserie2.jpg" alt="Éclair à la vanille" class="w-full h-40 object-cover">
-                </a>
+            <a href="./patisseries/details.php?id=2" class="block bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <img src="./assets/images/patisserie2.jpg" alt="Éclair à la vanille" class="w-full h-40 object-cover">
                 <div class="p-4">
-                    <h3 class="text-lg font-semibold">
-                        <a href="./patisseries/details.php?id=2" class="hover:underline">Éclair à la vanille</a>
-                    </h3>
+                    <h3 class="text-lg font-semibold">Éclair à la vanille</h3>
                     <p class="text-gray-600 mt-2">Une pâtisserie classique et savoureuse.</p>
                 </div>
-            </div>
+            </a>
             <!-- Carte 3 -->
-            <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
-                <a href="./patisseries/details.php?id=3">
-                    <img src="./assets/images/patisserie3.jpg" alt="Tarte aux framboises" class="w-full h-40 object-cover">
-                </a>
+            <a href="./patisseries/details.php?id=3" class="block bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <img src="./assets/images/patisserie3.jpg" alt="Tarte aux framboises" class="w-full h-40 object-cover">
                 <div class="p-4">
-                    <h3 class="text-lg font-semibold">
-                        <a href="./patisseries/details.php?id=3" class="hover:underline">Tarte aux framboises</a>
-                    </h3>
+                    <h3 class="text-lg font-semibold">Tarte aux framboises</h3>
                     <p class="text-gray-600 mt-2">Fraîcheur et douceur dans chaque bouchée.</p>
                 </div>
-            </div>
+            </a>
             <!-- Carte 4 -->
             <div class="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <a href="./patisseries/details.php?id=4">
