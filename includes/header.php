@@ -12,7 +12,13 @@
                 <li><a href="/I_need_a_cake/index.php" class="hover:underline">Accueil</a></li>
                 <li><a href="/I_need_a_cake/index.php" class="hover:underline">Pâtisseries</a></li>
                 <li><a href="/I_need_a_cake/index.php" class="hover:underline">Contact</a></li>
-                <li><a href="./login.php" class="hover:underline">Connexion</a></li>
+                <li>
+    <?php if (isset($_SESSION['user_id'])): ?>
+        <a href="/I_need_a_cake/logout.php" class="hover:underline">Déconnexion</a>
+    <?php else: ?>
+        <a href="/I_need_a_cake/login.php" class="hover:underline">Connexion</a>
+    <?php endif; ?>
+</li>
             </ul>
         </nav>
     </div>
