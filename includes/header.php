@@ -13,7 +13,7 @@
                 <li><a href="/I_need_a_cake/index.php" class="hover:underline">Pâtisseries</a></li>
                 <li><a href="/I_need_a_cake/index.php" class="hover:underline">Contact</a></li>
                 <li>
-    <a href="/cart.php" class="hover:underline">
+    <a href="/I_need_a_cake/cart.php" class="hover:underline">
         Panier (<?= array_sum(array_column($_SESSION['cart'] ?? [], 'quantity')) ?>)
     </a>
 </li>
