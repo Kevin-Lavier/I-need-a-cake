@@ -10,7 +10,7 @@
         <nav>
             <ul class="flex space-x-6">
                 <li><a href="/I_need_a_cake/index.php" class="hover:underline">Accueil</a></li>
-                <li><a href="/I_need_a_cake/index.php" class="hover:underline">Pâtisseries</a></li>
+                <li><a href="/I_need_a_cake/patisseries.php" class="hover:underline">Pâtisseries</a></li>
                 <li><a href="/I_need_a_cake/contact.php" class="hover:underline">Contact</a></li>
                 <li>
     <a href="/I_need_a_cake/cart.php" class="hover:underline">
