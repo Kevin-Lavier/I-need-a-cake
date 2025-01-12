@@ -1,5 +1,6 @@
 <?php
 session_start();
+include '../config.php'; // Connexion à la base de données
 
 // Ajouter au panier
 if (isset($_POST['add_to_cart'])) {
@@ -19,29 +20,19 @@ if (isset($_POST['add_to_cart'])) {
     exit;
 }
 
-// Simulation des données d'une pâtisserie
-$patisseries = [
-    1 => ['nom' => 'Macarons au chocolat', 'description' => 'Un délice gourmand pour tous les amateurs de chocolat.', 'image' => 'patisserie1.jpg', 'prix' => 12.50],
-    2 => ['nom' => 'Éclair à la vanille', 'description' => 'Une pâtisserie classique et savoureuse.', 'image' => 'patisserie2.jpg', 'prix' => 8.00],
-    3 => ['nom' => 'Tarte aux framboises', 'description' => 'Fraîcheur et douceur dans chaque bouchée.', 'image' => 'patisserie3.jpg', 'prix' => 15.00],
-    4 => ['nom' => 'Croissant au beurre', 'description' => 'Le classique du petit-déjeuner français.', 'image' => 'patisserie4.jpg', 'prix' => 2.50],
-    5 => ['nom' => 'Pain au chocolat', 'description' => 'Un incontournable pour une pause gourmande.', 'image' => 'patisserie5.jpg', 'prix' => 2.80],
-    6 => ['nom' => 'Cheesecake au citron', 'description' => 'Un mélange parfait de douceur et d’acidité.', 'image' => 'patisserie6.jpg', 'prix' => 18.00],
-    7 => ['nom' => 'Gâteau Opéra', 'description' => 'Une harmonie de chocolat et de café.', 'image' => 'patisserie7.jpg', 'prix' => 20.00],
-    8 => ['nom' => 'Tarte Tatin', 'description' => 'Un classique renversant aux pommes caramélisées.', 'image' => 'patisserie8.jpg', 'prix' => 14.00],
-    9 => ['nom' => 'Mille-feuille', 'description' => 'Un dessert élégant et croustillant.', 'image' => 'patisserie9.jpg', 'prix' => 16.00],
-];
-
 // Récupérer l'ID depuis l'URL
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 
+// Rechercher la pâtisserie dans la base de données
+$stmt = $pdo->prepare('SELECT * FROM patisseries WHERE id = ?');
+$stmt->execute([$id]);
+$patisserie = $stmt->fetch(PDO::FETCH_ASSOC);
+
 // Vérifier si la pâtisserie existe
-if (!array_key_exists($id, $patisseries)) {
+if (!$patisserie) {
     echo "Pâtisserie introuvable.";
     exit;
 }
-
-$patisserie = $patisseries[$id];
 ?>
 
 <!DOCTYPE html>
