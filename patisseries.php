@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include 'config.php'; // Connexion à la base de données
 
 // Récupérer les pâtisseries depuis la base de données
