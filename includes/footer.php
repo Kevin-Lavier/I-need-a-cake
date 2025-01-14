@@ -10,7 +10,7 @@
         <div>
             <h4 class="text-lg font-bold mb-4">Coordonnées</h4>
             <ul class="space-y-2">
-                <li class="text-gray-400">📍 123 Rue des Délices, Paris</li>
+                <li class="text-gray-400">📍 Dijon et alentours</li>
                 <li class="text-gray-400">📞 01 23 45 67 89</li>
                 <li class="text-gray-400">📧 contact@ineedacake.fr</li>
             </ul>
