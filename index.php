@@ -38,54 +38,74 @@ session_start();
     <div class="container mx-auto">
         <h2 class="text-3xl font-bold text-center mb-8">Nos créations en vedette</h2>
         
-        <!-- Carrousel -->
-        <div x-data="{ currentSlide: 0 }" class="relative overflow-hidden">
-            <!-- Slides -->
-            <div class="flex transition-transform duration-500" :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
-                <div class="flex-none w-full">
+        <!-- Carrousel pur HTML/CSS avec Tailwind -->
+        <div class="relative w-full max-w-3xl mx-auto">
+            <!-- Radio inputs : un par slide -->
+            <input type="radio" name="slide" id="slide1" class="hidden peer/slide1" checked>
+            <input type="radio" name="slide" id="slide2" class="hidden peer/slide2">
+            <input type="radio" name="slide" id="slide3" class="hidden peer/slide3">
+
+            <!-- Container des slides -->
+            <div class="relative overflow-hidden rounded-lg">
+                <!-- Slide 1 -->
+                <div 
+                    class="absolute w-full h-80 top-0 left-0 opacity-0 
+                           transition-opacity duration-500
+                           peer-checked/slide1:opacity-100"
+                >
                     <img src="./assets/images/patisserie1.jpg" alt="Macarons au chocolat" class="w-full h-80 object-cover rounded-lg">
-                    <p class="text-center text-lg mt-4">Macarons au chocolat - Un délice gourmand.</p>
+                    <p class="text-center text-lg mt-2 text-gray-800 bg-white/70 py-1">
+                        Macarons au chocolat - Un délice gourmand.
+                    </p>
                 </div>
-                <div class="flex-none w-full">
+
+                <!-- Slide 2 -->
+                <div 
+                    class="absolute w-full h-80 top-0 left-0 opacity-0 
+                           transition-opacity duration-500
+                           peer-checked/slide2:opacity-100"
+                >
                     <img src="./assets/images/patisserie2.jpg" alt="Éclair à la vanille" class="w-full h-80 object-cover rounded-lg">
-                    <p class="text-center text-lg mt-4">Éclair à la vanille - Une douceur classique.</p>
+                    <p class="text-center text-lg mt-2 text-gray-800 bg-white/70 py-1">
+                        Éclair à la vanille - Une douceur classique.
+                    </p>
                 </div>
-                <div class="flex-none w-full">
+
+                <!-- Slide 3 -->
+                <div 
+                    class="absolute w-full h-80 top-0 left-0 opacity-0 
+                           transition-opacity duration-500
+                           peer-checked/slide3:opacity-100"
+                >
                     <img src="./assets/images/patisserie3.jpg" alt="Tarte aux framboises" class="w-full h-80 object-cover rounded-lg">
-                    <p class="text-center text-lg mt-4">Tarte aux framboises - Fraîcheur assurée.</p>
+                    <p class="text-center text-lg mt-2 text-gray-800 bg-white/70 py-1">
+                        Tarte aux framboises - Fraîcheur assurée.
+                    </p>
                 </div>
             </div>
 
-            <!-- Boutons précédent et suivant -->
-            <button 
-                @click="currentSlide = (currentSlide > 0) ? currentSlide - 1 : 2"
-                class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-md hover:bg-gray-200">
-                &#10094;
-            </button>
-            <button 
-                @click="currentSlide = (currentSlide < 2) ? currentSlide + 1 : 0"
-                class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-md hover:bg-gray-200">
-                &#10095;
-            </button>
-
-            <!-- Indicateurs -->
-            <div class="flex justify-center mt-4 space-x-2">
-                <button 
-                    @click="currentSlide = 0"
-                    :class="{ 'bg-blue-500': currentSlide === 0, 'bg-gray-300': currentSlide !== 0 }"
-                    class="w-3 h-3 rounded-full transition-colors"></button>
-                <button 
-                    @click="currentSlide = 1"
-                    :class="{ 'bg-blue-500': currentSlide === 1, 'bg-gray-300': currentSlide !== 1 }"
-                    class="w-3 h-3 rounded-full transition-colors"></button>
-                <button 
-                    @click="currentSlide = 2"
-                    :class="{ 'bg-blue-500': currentSlide === 2, 'bg-gray-300': currentSlide !== 2 }"
-                    class="w-3 h-3 rounded-full transition-colors"></button>
+            <!-- Pastilles de navigation (indicateurs) -->
+            <div class="flex justify-center gap-3 mt-4">
+                <label for="slide1" 
+                       class="inline-block w-3 h-3 rounded-full cursor-pointer
+                              bg-gray-300 hover:bg-gray-400
+                              peer-checked/slide1:bg-blue-500"
+                ></label>
+                <label for="slide2" 
+                       class="inline-block w-3 h-3 rounded-full cursor-pointer
+                              bg-gray-300 hover:bg-gray-400
+                              peer-checked/slide2:bg-blue-500"
+                ></label>
+                <label for="slide3" 
+                       class="inline-block w-3 h-3 rounded-full cursor-pointer
+                              bg-gray-300 hover:bg-gray-400
+                              peer-checked/slide3:bg-blue-500"
+                ></label>
             </div>
         </div>
     </div>
 </section>
+
 
 
         <!-- Section Storytelling -->
